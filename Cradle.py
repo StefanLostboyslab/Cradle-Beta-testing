@@ -46,13 +46,13 @@ class ShowPaletteCommandExecute(adsk.core.CommandEventHandler):
         try:
             palette = _ui.palettes.itemById(PALETTE_ID)
             if not palette:
-                # Fixed Size: 400 x 850
-                palette = _ui.palettes.add(PALETTE_ID, PALETTE_TITLE, DASHBOARD_URL, True, True, False, 400, 850)
+                # Fixed Width, Flexible Height
+                palette = _ui.palettes.add(PALETTE_ID, PALETTE_TITLE, DASHBOARD_URL, True, True, True, 400, 850)
                 palette.dockingState = adsk.core.PaletteDockingStates.PaletteDockStateRight
                 
-                # ENFORCE SIZE (Prevent Docking Auto-Scale)
-                palette.setMinimumSize(400, 850)
-                palette.setMaximumSize(400, 850)
+                # ENFORCE SIZE (Fixed width 400, flexible height 600-2000)
+                palette.setMinimumSize(400, 600)
+                palette.setMaximumSize(400, 2000)
                 
                 # Register HTML event handler for receiving data from JS
                 onHTMLEvent = PaletteHTMLEventHandler()
@@ -62,8 +62,8 @@ class ShowPaletteCommandExecute(adsk.core.CommandEventHandler):
                 palette.title = PALETTE_TITLE
                 palette.isVisible = True
                 # Re-apply constraints on show to be safe
-                palette.setMinimumSize(400, 850)
-                palette.setMaximumSize(400, 850)
+                palette.setMinimumSize(400, 600)
+                palette.setMaximumSize(400, 2000)
         except:
             if _ui:
                 _ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
