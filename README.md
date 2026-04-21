@@ -4,6 +4,14 @@ Welcome to the beta testing repository for the Cradle Fusion 360 Add-in!
 
 This repository is used to distribute the latest beta versions of the add-in and collect feedback, bug reports, and feature requests.
 
+## Requirements
+
+To use this add-in, you must have an active **whatt.io** account. 
+
+1. **Register:** You can register for a free account at [whattio.app](https://whattio.app/) (a free account is sufficient to start, though you may upgrade to add more products).
+2. **App Store:** Activate the integration by visiting the Cradle app page in the whatt.io App Store: [Cradle App Link](https://whattio.app/app/78dc7cc7-495f-4d42-a100-90638dc2dcd3)
+
+
 ## How to Install the Beta Add-in
 
 To install the add-in manually from this repository, follow these steps:
