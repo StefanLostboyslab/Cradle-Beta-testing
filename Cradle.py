@@ -4,7 +4,7 @@
 import adsk.core, adsk.fusion, adsk.cam, traceback, json
 
 # --- CONFIGURATION ---
-APP_VERSION = '0.63'  # Must match Dashboard version
+APP_VERSION = '0.64'  # Must match Dashboard version
 DASHBOARD_URL = 'https://cradle-products-375243024916.us-central1.run.app'
 PALETTE_ID = 'cradle_dashboard_palette_v10'
 PALETTE_TITLE = 'Cradle Dashboard v{}'.format(APP_VERSION)
