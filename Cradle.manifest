@@ -1,0 +1,13 @@
+{
+	"autodeskProduct":	"Fusion360",
+	"type":	"addin",
+	"id":	"D8469AA9-5E90-4828-809C-57279D277C05",
+	"author":	"AG Cradle",
+	"description":	{
+		"":	"Digital Product Passport Dashboard for Fusion 360"
+	},
+	"version":	"0.61.0",
+	"runOnStartup":	true,
+	"supportedOS":	"windows|mac",
+	"editEnabled":	true
+}
